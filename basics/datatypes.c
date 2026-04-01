@@ -7,10 +7,10 @@ int main()
     float b=3.142312;
     char c='A';
     double d=2.7151648;
-    long e=10000000000;
+    long e=100000000;
     short f=32767;
     char str[100]="This is a @Gowtham-314";
-    long int j=12345678910;
+    long int j=123456789;
     long long int k10=123456789123456789;
     
     printf("int a : %d \n",a);
