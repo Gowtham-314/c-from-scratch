@@ -19,11 +19,11 @@ This repository documents concepts, practice problems, and mini-projects to buil
 
 🗂️ Project Structure
 
-c-from-scratch/
-│
-├── basics/
-├── mini-projects/
-└── README.md
+c-from-scratch/<br>
+<br>
+├── basics/<br>
+├── mini-projects/<br>
+└── README.md<br>
 
 ---
 
