@@ -11,10 +11,8 @@ int main()
         scanf("%d", &arr[i]);
     }
 
-    printf("Entered Array are ....\n")
+    printf("\nEntered Array are ....\n");
     for(int i=0; i<5; i++)
-    {
-        printf("arr[%d] = %d ",i,arr[i]);
-    }
+        printf("arr[%d] = %d\n", i, arr[i]);
     return 0;
 }
