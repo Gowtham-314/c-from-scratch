@@ -22,6 +22,7 @@ This repository documents concepts, practice problems, and mini-projects to buil
 c-from-scratch/<br>
 <br>
 ├── basics/<br>
+├── Arrays</br>
 ├── mini-projects/<br>
 └── README.md<br>
 
