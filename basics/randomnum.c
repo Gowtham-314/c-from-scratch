@@ -1,14 +1,15 @@
 #include<stdio.h>
 #include<conio.h>
+#include<stdlib.h>
 #include<windows.h>
 int main()
 {
     int max,min,randomnum;
-    printf("Enter the maximum number: ");
-    scanf("%d", &max);
-    printf("Enter the Minimum number: ");
+    printf("Enter the Mininum number: ");
     scanf("%d", &min);
+    printf("Enter the Maximum number: ");
+    scanf("%d", &max);
     randomnum=rand()/(max-min+1)+min;
-    prinf("Random Number Between %d and %d is : %d ",min,max,randomnum);    
+    printf("Random Number Between %d and %d is : %d ",min,max,randomnum);    
     return 0;
 }
