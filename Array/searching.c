@@ -18,7 +18,7 @@ int main()
     scanf("%d", &search_ele);
 
 
-    while(
+    while(                                                                                                                                              
 
     printf("\nEntered Array are ....\n");
     for(int i=0; i<n; i++)
