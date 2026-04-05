@@ -15,9 +15,9 @@ void wait(int n)
 {
     const char *arr[] = {"PAN Number", "AADHAR Number", "APAAR Id", "Driving License", "Passport"};
     if (n >= 1 && n <= 5)
-        printf("%s Verifying......\n", arr[n - 1]);
+        printf("\n%s Verifying......Under Processing\n", arr[n - 1]);
     else
-        printf("Verifying......\n");
+        printf("\nVerifying......\n");
     Sleep(2000);
 }
 
@@ -39,45 +39,45 @@ int main()
         scanf("%d",&user);
         wait(n);
         if(user==pan)
-        printf("PAN Number Verified.\n");
+        printf("\nPAN Number Verified.\n");
         else
-        printf("PAN Number Unverified.\n");
+        printf("\nPAN Number Unverified.\n");
         break;
     case 2:
         printf("\nEnter the AADHAR Number: \n");
         scanf("%d",&user);
         wait(n);
         if(user==aadhar)
-        printf("AADHAR Number Verified.\n");
+        printf("\nAADHAR Number Verified.\n");
         else
-        printf("AADHAR Number Unverified.\n");
+        printf("\nAADHAR Number Unverified.\n");
         break;
     case 3:
         printf("\nEnter the APAAR Id: \n");
         scanf("%d",&user);
         wait(n);
         if(user==aapar)
-        printf("APAAR Id Verified.\n");
+        printf("\nAPAAR Id Verified.\n");
         else
-        printf("APAAR Id Unverified.\n");
+        printf("\nAPAAR Id Unverified.\n");
         break;
     case 4:
         printf("\nEnter the Driving License Number: \n");
         scanf("%d",&user);
         wait(n);
         if(user==driving_licence)
-        printf("Driving License Verified.\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ");
+        printf("\nDriving License Verified.\n");
         else
-        printf("Driving License Unverified.\n");
+        printf("\nDriving License Unverified.\n");
         break;
     case 5:
         printf("\nEnter the Passport Number: \n");
         scanf("%d",&user);
         wait(n);
         if(user==passport)
-        printf("Passport Verified.\n");
+        printf("\nPassport Verified.\n");
         else
-        printf("Passport Unverified.\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ");
+        printf("\nPassport Unverified.\n");
         break;
     default:
         wait(n);
