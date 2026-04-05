@@ -17,7 +17,7 @@ void wait(int n)
     if (n >= 1 && n <= 5)
         printf("\n%s Verifying......Under Processing\n", arr[n - 1]);
     else
-        printf("\nVerifying......\n");
+        printf("\nVerifying......Under Processing.\n");
     Sleep(2000);
 }
 
