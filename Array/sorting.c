@@ -14,23 +14,22 @@ int main()
         printf("arr[%d] = ", i);
         scanf("%d", &arr[i]);
     }
-
-
-    int search_ele;
-    printf("Enter the element to search: ");
-    scanf("%d", &search_ele);
-    int found = 0;
-    for(int i=0; i<n; i++)
+    // Sorting the array (Quick Sort)
+    for(int i=0; i<n-1; i++)
     {
-        if(arr[i] == search_ele)
+        for(int j=0; j<n-i-1; j++)
         {
-            printf("Element %d found at index %d\n", search_ele, i);
-            found = 1;
-            break;
+            if(arr[j] > arr[j+1])
+            {
+                int temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
         }
     }
-    if(!found)
-    {
-        printf("Element %d not found in the array\n", search_ele);
-    }   
+
+    printf("\nSorted Array are ....\n");
+    for(int i=0; i<n; i++)
+        printf("arr[%d] = %d\n", i, arr[i]);
+
 }
