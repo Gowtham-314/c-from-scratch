@@ -16,12 +16,14 @@ int main()
     int search_ele;
     printf("Enter the element to search: ");
     scanf("%d", &search_ele);
-
-
-    while(                                                                                                                                              
-
-    printf("\nEntered Array are ....\n");
+    
     for(int i=0; i<n; i++)
-        printf("arr[%d] = %d\n", i, arr[i]);
-    return 0;
+    {
+        if(arr[i] == search_ele)
+        {
+            printf("Element found at index %d\n", i);
+            return 0;
+        }
+    }
+    printf("Element not found in the array.\n");
 }
