@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
+#include<stdbool.h>
 
 int main()
 {
@@ -18,13 +19,15 @@ int main()
     scanf("%d", &search_ele);
 
     int low = 0, high = n-1;
+    bool x;
     while(low <= high)
     {
-        int mid = (low + high)/ 2;
+        int mid = (low + high) / 2;
         if(arr[mid] == search_ele)
         {
-            printf("Element found at index %d\n", mid);
-            return 0;
+            x = true;
+            break;
+
         }
         else if(arr[mid] < search_ele)
         {
@@ -35,6 +38,12 @@ int main()
             high = mid - 1;
         }
     }
-    printf("Element not found in the array.\n");
-
+    if(x)
+    {
+        printf("Element found in the array.\n");
+    }
+    else
+    {
+        printf("Element not found in the array.\n");
+    }
 }
