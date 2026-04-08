@@ -6,7 +6,8 @@ int main() {
     double num1, num2, result;
     char operator;
 
-    printf("Enter first number: ");
+    letstart:
+    printf("\n\nEnter first number: ");
     scanf("%lf", &num1);
 
     printf("Enter operator (+, -, *, /): ");
@@ -39,5 +40,12 @@ int main() {
     }
 
     printf("Result: %.2lf\n", result);
+
+    char choice;
+    printf("Do you want to perform another calculation? (y/n): ");
+    scanf(" %c", &choice);
+    if(choice == 'y' || choice == 'Y') {
+        goto letstart;
+    }   
     return 0;
 }
