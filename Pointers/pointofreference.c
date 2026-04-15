@@ -10,7 +10,7 @@ void swap(int *a, int *b) {
 int main()
 {
     // Point of Reference declaration
-
+    
     // swap two numbers using pointers
     int num1, num2;
     printf("Enter the first number: ");
