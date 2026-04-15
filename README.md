@@ -42,6 +42,9 @@ c-from-scratch/<br>
 
 Day| Topic| Status
 Day 1| Basics| 🔄
+Day 2| Arrays| 🔄
+Day 3| Pointers| 🔄
+Day 4| Mini Project 1| 🔄
 
 ---
 
