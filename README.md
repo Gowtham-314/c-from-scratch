@@ -23,6 +23,7 @@ c-from-scratch/<br>
 <br>
 ├── basics/<br>
 ├── Arrays</br>
+├── Pointers<br>
 ├── mini-projects/<br>
 └── README.md<br>
 
