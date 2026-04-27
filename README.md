@@ -41,7 +41,7 @@ c-from-scratch/<br>
 📈 Progress Tracker
 
 Day| Topic| Status
-Day 1| Basics| 
+Day 1| Basics| ✅
 Day 2| Arrays| 🔄
 Day 3| Pointers| 🔄
 Day 4| Mini Project | 🔄
