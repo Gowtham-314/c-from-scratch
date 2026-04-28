@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
-
+// Arrays in C
 int main()
 {
     int arr[5];

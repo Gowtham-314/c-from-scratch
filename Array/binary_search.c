@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include<stdbool.h>
-
+// Binary Search in C
 int main()
 {
     int arr[100],n;
