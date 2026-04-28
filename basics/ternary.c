@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<conio.h>
 #include<stdbool.h>
+
+// Ternary operator in C
 int main()
 {
     int a=10, b=20;
