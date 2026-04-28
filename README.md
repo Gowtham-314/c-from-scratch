@@ -2,9 +2,6 @@
 
 A structured and hands-on journey of learning C programming from the ground up.
 
-This repository documents concepts, practice problems, and mini-projects to build a strong foundation in C and improve problem-solving skills.
-
----
 
 📌 What You'll Find
 
@@ -37,12 +34,11 @@ c-from-scratch/<br>
 - Stay consistent with daily practice
 
 ---
-
 📈 Progress Tracker
 
 Day| Topic| Status
-Day 1| Basics| 🔄
-Day 2| Arrays| 🔄
+Day 1| Basics| ✅
+Day 2| Arrays| ✅
 Day 3| Pointers| 🔄
 Day 4| Mini Project 1| 🔄
 
