@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
-
+// Control statements in C
 int main()
 {
     // Control statements
