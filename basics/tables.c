@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
-
+// Tables in C
 int main()
 {
     int num;
