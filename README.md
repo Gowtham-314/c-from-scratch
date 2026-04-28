@@ -18,10 +18,10 @@ A structured and hands-on journey of learning C programming from the ground up.
 
 c-from-scratch/<br>
 <br>
-├── basics/<br>
+├── Basics/<br>
 ├── Arrays</br>
 ├── Pointers<br>
-├── mini-projects/<br>
+├── Mini-projects/<br>
 └── README.md<br>
 
 ---
@@ -38,9 +38,13 @@ c-from-scratch/<br>
 
 Day| Topic| Status
 Day 1| Basics| ✅
+<<<<<<< HEAD
 Day 2| Arrays| ✅
+=======
+Day 2| Arrays| 🔄
+>>>>>>> 42da6845e325413d5e7f20878bfc5479dedc5529
 Day 3| Pointers| 🔄
-Day 4| Mini Project 1| 🔄
+Day 4| Mini Project | 🔄
 
 ---
 
