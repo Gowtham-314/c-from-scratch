@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<windows.h>
+
+// Number Guessing Game in C
 int main()
 {
     int random,user_input,count=0;
