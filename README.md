@@ -52,4 +52,4 @@ Day 4| Mini Project | 🔄
 ---
 
 
-⭐ If you like this repo, consider giving it a star!
+⭐  If you like this repo, consider giving it a star!
