@@ -39,10 +39,11 @@ c-from-scratch/<br>
 ---
 📈 Progress Tracker
 
-Day| Topic| Status
+Day| Topic| Status<br>
+<br>
 Day 1| Basics| ✅<br>
-Day 2| Arrays| ✅ <br>
-Day 3| Pointers| 🔄 <br>
+Day 2| Arrays| ✅<br>
+Day 3| Pointers| 🔄<br>
 Day 4| Mini Project | 🔄<br>
 
 ---
