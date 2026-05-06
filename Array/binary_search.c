@@ -21,6 +21,7 @@ int main()
     int low = 0, high = n-1;
     bool x = false;
     int pos=-1;
+
     while(low <= high)
     {
         int mid = (low + high) / 2;
@@ -37,7 +38,7 @@ int main()
     }
     if(x)
     {
-        printf("Element found in the array at position %d.\n", pos);
+        printf("Element found in the array at position %d.\n", pos+1);
     }
     else
     {
