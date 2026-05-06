@@ -19,28 +19,25 @@ int main()
     scanf("%d", &search_ele);
 
     int low = 0, high = n-1;
-    bool x;
+    bool x = false;
+    int pos=-1;
     while(low <= high)
     {
         int mid = (low + high) / 2;
         if(arr[mid] == search_ele)
         {
             x = true;
+            pos = mid;
             break;
-
-        }
+        }   
         else if(arr[mid] < search_ele)
-        {
             low = mid + 1;
-        }
         else
-        {
             high = mid - 1;
-        }
     }
     if(x)
     {
-        printf("Element found in the array.\n");
+        printf("Element found in the array at position %d.\n", pos);
     }
     else
     {
