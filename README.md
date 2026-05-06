@@ -22,8 +22,8 @@ This repository documents concepts, practice problems, and mini-projects to buil
 c-from-scratch/<br>
 <br>
 ├── Basics/<br>
-├── Arrays</br>
-├── Pointers<br>
+├── Arrays/<br>
+├── Pointers/<br>
 ├── Mini-projects/<br>
 └── README.md<br>
 
@@ -39,17 +39,14 @@ c-from-scratch/<br>
 ---
 📈 Progress Tracker
 
-Day| Topic| Status
-Day 1| Basics| ✅
-<<<<<<< HEAD
-Day 2| Arrays| ✅
-=======
-Day 2| Arrays| 🔄
->>>>>>> 42da6845e325413d5e7f20878bfc5479dedc5529
-Day 3| Pointers| 🔄
-Day 4| Mini Project | 🔄
+Day| Topic| Status<br>
+<br>
+Day 1| Basics| ✅<br>
+Day 2| Arrays| ✅<br>
+Day 3| Pointers| 🔄<br>
+Day 4| Mini Project | 🔄<br>
 
 ---
 
 
-⭐ If you like this repo, consider giving it a star!
+⭐  If you like this repo, consider giving it a star!
