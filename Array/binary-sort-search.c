@@ -1,7 +1,5 @@
 #include<stdio.h>
-#include<conio.h>
 #include<stdbool.h>
-
 
 void sort_array(int arr[], int n) {
     for(int i=0; i<n-1; i++) {
