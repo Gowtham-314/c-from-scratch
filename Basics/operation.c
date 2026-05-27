@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
-
+// Arithmetic operations without using arithmetic operators
 int main()
 {
     int a, b, sum, difference, product, quotient;
