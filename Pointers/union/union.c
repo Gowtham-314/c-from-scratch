@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<conio.h>
+#include<string.h>
 // Union in C
 union Data {
     int i;
