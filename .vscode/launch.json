@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/gowda/OneDrive/Desktop/C/c-from-scratch/basics",
-      "program": "c:/Users/gowda/OneDrive/Desktop/C/c-from-scratch/basics/build/Debug/outDebug",
+      "cwd": "c:/Users/gowda/OneDrive/Desktop/C/c-from-scratch/Pointers/union",
+      "program": "c:/Users/gowda/OneDrive/Desktop/C/c-from-scratch/Pointers/union/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
