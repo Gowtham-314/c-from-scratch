@@ -13,7 +13,10 @@ int main()
     
     Operation choice;
     printf("Enter your choice (0 for ADD, 1 for SUBTRACT, 2 for MULTIPLY, 3 for DIVIDE): ");
-    scanf("%d", &choice);
+    if (scanf("%d", &choice) != 1) {
+        printf("Invalid input\n");
+        return 1;
+    }
     switch(choice) {
         case ADD:
             printf("You chose ADD\n");
