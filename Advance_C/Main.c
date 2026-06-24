@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 
 int main()
 {
@@ -19,7 +18,4 @@ int main()
     // reset color code: \033[0m
     // other colors: https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
 
-    
-
-    getche();
 }
