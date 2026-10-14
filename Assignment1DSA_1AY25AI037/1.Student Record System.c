@@ -1,4 +1,7 @@
 /*
+
+Dynamic Student Record System 
+
 Design a struct Student with fields: roll_no (int), name (char[20]), marks (float).
 Write a C program that:
 
@@ -10,116 +13,79 @@ e. If n changes at runtime (ask the user if they want to add 2 more students), u
 */
 
 
-
-#include<stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
-struct Student
-{
+struct Student {
     int roll_no;
     char name[20];
     float marks;
 };
 
-int main()
-{
-    int n;
-    printf("Enter the Number of Students : ");
+int main() {
+    int n, i;
+    char ans;
+    struct Student *s, *highest;
+
+    printf("Enter number of students: ");
     if (scanf("%d", &n) != 1 || n <= 0) {
-        printf("Invalid input.\n");
+        printf("Invalid number!\n");
         return 1;
     }
 
-    struct Student *s = malloc(n * sizeof(*s));
+    s = malloc(n * sizeof(struct Student));
 
     if (s == NULL) {
         printf("Memory allocation failed!\n");
         return 1;
     }
 
-    printf("\nEnter student records:\n");
-    for (int i = 0; i < n; i++) {
-        struct Student *current = s + i;
-
-        printf("\nStudent %d roll number: ", i + 1);
-        if (scanf("%d", &current->roll_no) != 1) {
-            printf("Invalid roll number.\n");
-            free(s);
-            return 1;
-        }
-
-        printf("Student %d name: ", i + 1);
-        if (scanf(" %19[^\n]", current->name) != 1) {
-            printf("Invalid name.\n");
-            free(s);
-            return 1;
-        }
-
-        printf("Student %d marks: ", i + 1);
-        if (scanf("%f", &current->marks) != 1) {
-            printf("Invalid marks.\n");
-            free(s);
-            return 1;
-        }
+    for (i = 0; i < n; i++) {
+        printf("Enter roll, name, marks: ");
+        scanf("%d %19s %f", &(s+i)->roll_no,
+              (s+i)->name, &(s+i)->marks);
     }
 
-    char ans;
-    printf("\nDo you want to add 2 more students? (y/n): ");
-    scanf(" %c", &ans);
 
-    if (ans == 'y' || ans == 'Y') {
-        int new_count = n + 2;
-        struct Student *resized = realloc(s, new_count * sizeof(*s));
+    repeat:
+        float total = 0;
+        highest = s;
 
-        if (resized == NULL) {
-            printf("Memory reallocation failed. Existing records will be used.\n");
-        } 
-        else {
-            s = resized;
-            for (int i = n; i < new_count; i++) {
-                struct Student *current = s + i;
+        for (i = 0; i < n; i++) {
+            total += (s+i)->marks;
 
-                printf("\nStudent %d roll number: ", i + 1);
-                if (scanf("%d", &current->roll_no) != 1) {
-                    printf("Invalid roll number.\n");
-                    free(s);
-                    return 1;
+            if ((s+i)->marks > highest->marks)
+                highest = s+i;
+        }
+
+        printf("\nUpdated average marks: %.2f\n", total/n);
+        printf("Topper: %s (Roll %d, Marks %.2f)\n",
+            highest->name, highest->roll_no, highest->marks);
+
+
+        printf("\n\nDo you want to add 2 more students? (y/n): ");
+        scanf(" %c", &ans);
+
+        if (ans == 'y' || ans == 'Y') {
+            struct Student *temp;
+            temp = realloc(s, (n+2) * sizeof(struct Student));
+
+            if (temp != NULL) {
+                s = temp;
+
+                for (i = n; i < n+2; i++) {
+                    printf("Enter roll, name, marks: ");
+                    scanf("%d %19s %f", &(s+i)->roll_no,
+                        (s+i)->name, &(s+i)->marks);
                 }
 
-                printf("Student %d name: ", i + 1);
-                if (scanf(" %19[^\n]", current->name) != 1) {
-                    printf("Invalid name.\n");
-                    free(s);
-                    return 1;
-                }
-
-                printf("Student %d marks: ", i + 1);
-                if (scanf("%f", &current->marks) != 1) {
-                    printf("Invalid marks.\n");
-                    free(s);
-                    return 1;
-                }
+                n = n + 2;
+                goto repeat;
+                
             }
-            n = new_count;
         }
-    }
-
-    float total_marks = 0.0f;
-    struct Student *highest = s;
-    for (int i = 0; i < n; i++) {
-        struct Student *current = s + i;
-        total_marks += current->marks;
-        if (current->marks > highest->marks) {
-            highest = current;
-        }
-    }
-
-    printf("\nAverage marks: %.2f\n", total_marks / n);
-    printf("Student with highest marks:\n");
-    printf("Roll number: %d\n", highest->roll_no);
-    printf("Name: %s\n", highest->name);
-    printf("Marks: %.2f\n", highest->marks);
 
     free(s);
+
     return 0;
 }
