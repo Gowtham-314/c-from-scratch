@@ -24,6 +24,7 @@ struct Student {
 
 int main() {
     int n, i;
+    float total;
     char ans;
     struct Student *s, *highest;
 
@@ -48,7 +49,7 @@ int main() {
 
 
     repeat:
-        float total = 0;
+        total = 0;
         highest = s;
 
         for (i = 0; i < n; i++) {
