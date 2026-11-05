@@ -38,7 +38,8 @@ typedef struct {
     } pay;
 } Employee;
 
-int main() {
+int main() 
+{
     int n, i;
     float total_bill = 0, pay;
     Employee *e;
@@ -94,5 +95,6 @@ int main() {
     printf("\nTotal Salary Bill: %.2f\n", total_bill);
 
     free(e);
+    
     return 0;
 }
